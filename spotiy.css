@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+ 
+    padding: .5rem;
+}
+.sidebar{
+    background-color: #000;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: .5rem;
+    
+}
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music-player{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+ .nav-option a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+   
+}
+.nav-option{
+    line-height: 2.5rem;
+    font-size: 1.25rem; 
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option i{
+    font-size:  1rem;
+}
+.nav-option:hover{
+    opacity: 1; 
+}
+.Library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: .5rem;
+    padding: 0.5rem 0.75rem;
+    
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options .lib-option a {
+    color: #fff;
+    text-decoration: none;
+}
+.icon{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icon i{
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+.icon i:hover{
+    opacity: 1;
+}
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: .75rem;
+    margin: .75rem 0 .75rem 0;
+    padding: 0.5rem 1.25rem;
+
+}
+.box-p1{
+    font-size: .85rem;
+    font-weight: 700;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: .75;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: .25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   padding: 1rem .5rem;
+   z-index: 10;
+}
+.sticky-nav-icons{
+    margin-left: .75rem;
+}
+.sticky-nav-option{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-option button{
+    margin-right: .75rem;
+}
+.nav-item{
+    margin-right: 1rem;
+}
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+}
+@media(max-width:1000px) {
+   .hide{
+    display: none;
+    }
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+.card-img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.card-container{
+    display: flex; 
+    flex-wrap: wrap;  
+
+}
+.card-titel{
+    font-weight: 600;
+}
+.card-info{
+    font-size: .65rem;
+    opacity: .7;
+}
+.footer{
+    height: 300px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.line{
+    height: 50%;
+    width: 90%;
+    border-top: 1px solid white;
+    opacity: .4;
+}
+.player{
+    width: 50%;
+    /* background-color: orange; */
+
+}
+.album{
+    height: 100%;
+    width: 25%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.controls{
+    width: 25%;
+}
+.player-control-icon{
+    height: 1.5rem;
+    opacity: 0.7;
+    margin-right: 1.75rem;
+}
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    /* background-color: transparent; */
+    cursor: pointer;
+    height: .10rem;
+    background-color: #ddd;
+    border-radius: 100px; 
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Cicon{
+    height: 1.5rem;
+    opacity: .6;
+}
+.Cicon:hover{
+    opacity: 1;
+}
+.Cicon-input{
+    appearance: none;
+    height: .2rem;
+    border-radius: 100px;
+    width: 30%;
+}
+.control-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+.album-icon{
+    display: flex;
+    margin: 1rem;
+    opacity: .7;
+}
+.leftimg{
+    height: 90%;
+}
+.alb-p{
+    font-size: .85rem;
+}
+.icon1{
+    margin-left: .5rem;
+}
+.album-icon:hover{
+    opacity: 1;
+}
